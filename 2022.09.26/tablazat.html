@@ -4,46 +4,50 @@
         <meta name="Author" content="Szabó Nándor">
         <meta charset="UTF-8">
         <title>Táblázat minta</title>
-
+        <link rel="stylesheet" href="tablazat.css">
     </head>
     <body>
         <h1>Táblázat gyakorlás</h1>
-        <table style=
-        "border: 2px  black ;
-        background-color:aqua;
-        border-radius:10px;
-        padding : 10px; 
-        border-style:double; 
-        width:50%;" >
-            
-            <tr style="height: 100px;">
-                <th style=
-                "border: 2px  black ;
-                background-color: plum;
-                border-radius: 10px;
-                /*padding : 10px;*/ 
-                border-style: inset;2
-                width: 55px;">
-                    1. fejléc</th>
-                <th>2. fejléc</th>
-                <th>3. fejléc</th>
+        <table>
+            <tr>
+                <colgroup>
+                    <col span="3">
+                    <col span="2" id="kiemelt">
+                </colgroup>
+                <th>1. fejléc</th>
+                <th colspan="2"><center>2. fejléc</center></th>
+                <!-- <th>3. fejléc</th> -->
                 <th>4. fejléc</th> 
                 <th>5. fejléc</th>
+                
             </tr>
             <tr>
-                <td>1. mező</td>
+                <th rowspan="2">1. sor</th>
                 <td>2. mező</td>
                 <td>3. mező</td>
                 <td>4. mező</td>
                 <td>5. mező</td>
             </tr>
             <tr>
-                <td>1. mező</td>
+                <!-- <th>2. sor</th> -->
+                <td>2. mező</td>
+                <td>3. mező</td>
+                <td >4. mező</td>
+                <td>5. mező</td>
+            </tr>
+            <tr>
+                <th>3. sor</th>
                 <td>2. mező</td>
                 <td>3. mező</td>
                 <td>4. mező</td>
                 <td>5. mező</td>
             </tr>
         </table>
+        <div class="bekezdések">
+            <h2>1. bekezdés.</h2>   
+            <p>Lorem ipsum dolor sit amet <span class="fontos">consectetur</span>  adipisicing elit. Esse fuga nulla possimus. Minima magni ratione a nam incidunt mollitia possimus?</p>
+            <h2>2. bekezdés.</h2> 
+            <p>Lorem ipsum dolor sit amet consectetur <span class="fontos">adipisicing</span>  elit. In eos culpa ipsam velit eius saepe nulla dolore harum praesentium accusantium.</p>
+        </div>
     </body>
 </html>

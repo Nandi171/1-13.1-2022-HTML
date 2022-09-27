@@ -1,0 +1,35 @@
+        table{
+                border: 2px  black;
+                background-color:aqua;
+                border-radius:10px;
+                padding : 10px; 
+                border-style:double; 
+                width:50%; 
+            }
+            td, th{
+                border: solid 1px;
+            }
+            th{
+                text-align: left;
+            }
+            td{
+                padding-top: 5px;
+                padding-right: 10px;
+                padding-bottom: 15px;
+                padding-left: 5px;
+                
+                margin: 10px, 8px, 6px, 4px;
+                
+            }
+            #kiemelt{
+                background-color: red;
+                visibility: collapse;
+            }
+            .bekezdések{
+                color: blue;
+            }
+            .fontos{
+                font-weight:bold;
+                font-style: italic;
+                color: green;
+            }
